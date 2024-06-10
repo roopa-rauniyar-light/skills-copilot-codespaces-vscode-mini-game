@@ -45,7 +45,8 @@ app.put("/comments/:id", function (req, res) {
   res.json(comments);
 });
 
-// Delete a comment from the comments.json file
+//
+//  Delete a comment from the comments.json file
 app.delete("/comments/:id", function (req, res) {
   var comment = _.find(comments, { id: req.params.id });
   if (!comment) {
